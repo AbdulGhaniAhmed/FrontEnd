@@ -1,0 +1,25 @@
+body,
+html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.front {
+  /* background: url(https://www.freepik.com/free-photo/beautiful-photozone-with-big-wreath-decorated-with-greenery-roses-centerpiece-candles-sides-garland-hanged-trees_7497083.htm#page=1&query=wedding%20background&position=24) ; */
+  background: url(../Components/images/5b.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  /* border-radius: 50px; */
+  height: 90vh;
+}
+
+.active-pink-3 input[type="text"] {
+  border: 1px solid #6d4c41;
+  box-shadow: 0 0 0 1px #6d4c41;
+}
+
+.row {
+  padding-top: 250px;
+}
