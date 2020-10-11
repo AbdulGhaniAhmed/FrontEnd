@@ -1,12 +1,13 @@
 import React from "react";
+import './Practice.css';
 import { MDBRow } from "mdbreact";
 
-class Masonary extends React.Component {
+class MasonryPage extends React.Component {
   render() {
     return (
       <MDBRow className="masonry-with-columns-2">
         <div>
-        <img src="https://mdbootstrap.com/img/Others/documentation/1.jpg" className="img-fluid" alt="" />
+          1
         </div>
         <div>
           2
@@ -54,5 +55,4 @@ class Masonary extends React.Component {
     );
   }
 }
-
-export default Masonary;
+export default MasonryPage;

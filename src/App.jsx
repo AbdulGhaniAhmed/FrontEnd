@@ -10,7 +10,10 @@ import Album from './Components/Album';
 import SignIn from './Components/SignIn';
 import SignUp from './Components/SignUp';
 import ProductCategories from './Components/ProductCategories';
-import Masonary from './Components/Masonary';
+import MasonryPage from './Components/MasonryPage';
+import ParallaxPractice from './Components/ParallaxPractice';
+import FirstCard from './Components/FirstCard';
+import './index.css';
 
 class App extends Component{
     render(){
@@ -29,9 +32,11 @@ class App extends Component{
                 <Route exact path='/signUp' component={SignUp} />
                 <Route component={Error} />
             </Switch>
+            <FirstCard />
             <ProductCategories />
-            <Album/>
-            <Masonary />
+            {/* <Album/> */}
+            {/* <ParallaxPractice/> */}
+            {/* <MasonryPage /> */}
         </> 
         )
     }

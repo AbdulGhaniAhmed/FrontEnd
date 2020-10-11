@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import {MDBNavbar,MDBNavbarBrand,MDBNavbarNav,MDBNavItem,MDBNavLink,MDBNavbarToggler,MDBCollapse,MDBDropdown,MDBDropdownToggle,MDBDropdownMenu,MDBDropdownItem,MDBIcon,
 } from "mdbreact";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "bootstrap-css-only/css/bootstrap.min.css";
-import "mdbreact/dist/css/mdb.css";
 
 class Navigation extends Component {
   state = {
@@ -50,7 +47,20 @@ class Navigation extends Component {
                 </MDBDropdown>
               </MDBNavItem>
             </MDBNavbarNav>
-            <MDBNavbarNav right>
+            
+            <MDBNavbarNav right style={{marginRight:'30px'}}>
+            <MDBNavItem>
+                <MDBDropdown>
+                  <MDBDropdownToggle nav caret >
+                    <MDBIcon icon="user" />
+                  </MDBDropdownToggle>
+                  <MDBDropdownMenu className="dropdown-default">
+                    <MDBDropdownItem href="#!">LogIn</MDBDropdownItem>
+                    <MDBDropdownItem href="#!">LogOut</MDBDropdownItem>
+                    <MDBDropdownItem href="#!">SignUP</MDBDropdownItem>
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+              </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink className="waves-effect waves-light" to="#!">
                   <MDBIcon fab icon="twitter" />
@@ -61,23 +71,7 @@ class Navigation extends Component {
                   <MDBIcon fab icon="google-plus-g" />
                 </MDBNavLink>
               </MDBNavItem>
-              <MDBNavItem>
-                <MDBDropdown>
-                  <MDBDropdownToggle nav caret>
-                    <MDBIcon icon="user" />
-                  </MDBDropdownToggle>
-                  <MDBDropdownMenu className="dropdown-default">
-                    <MDBDropdownItem href="#!">Action</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">
-                      Something else here
-                  </MDBDropdownItem>
-                    <MDBDropdownItem href="#!">
-                      Something else here
-                  </MDBDropdownItem>
-                  </MDBDropdownMenu>
-                </MDBDropdown>
-              </MDBNavItem>
+             
             </MDBNavbarNav>
           </MDBCollapse>
       </MDBNavbar>

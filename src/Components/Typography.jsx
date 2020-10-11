@@ -24,7 +24,7 @@ const styles = (theme) => ({
     width: 55,
     display: 'block',
     margin: `${theme.spacing(1)}px auto 0`,
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: 'brown',
   },
   markedH6Left: {
     height: 2,
